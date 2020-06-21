@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home | Raahee</title>
+</head>
+<body>
+    <header>
+        <!--Nav Bar-->
+        <nav id="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <i class="fa fa-align-justify" aria-hidden="true"></i>
+                </a>     
+            </span>
+
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="Raahee">
+            </div>
+
+            <ul class="navbar-nav">
+                <li><a href="login.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>               
+            </ul>
+        </nav>
+
+        <div id="side-nav">
+            <a href="#" class="btn-close" 
+                onclick="closeSlideMenu()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="login.html">Contact</a>  
+        </div>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home">
+        <div class="contain home-row">
+            <div class="home-left-col">
+                <div class="home-text">
+                    <p>It's all about finding the calm in the chaos....</p>
+                    <h1>Welcome to Raahee</h1>
+                    <h2>The emotional first aid you need</h2>
+                    <h3>How are you feeling today?</h3>
+                </div>
+            </div>
+            <div class="home-right-col">
+                <img src="./images/meditation.jpg" alt="meditation">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h1>Our Vision</h1>
+        <div class="contain about-row">
+            <div class="about-left-col">
+                <img src="./images/hug.jpg" alt="Do you want a hug?">
+            </div>
+
+            <div class="about-right-col">
+                <div class="about-text">
+                    <p>Raahee was started after seeing the growing cases of 
+                        depression around the world. It was built to help 
+                        people deal with mental or emotional distress
+                        they might be going through.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <section id="footer">
+        <a href="#home"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+        <br><br>
+        <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020</p>        
+
+        <div class="social">
+            <a href="mailto:hope.mentalhealthapp19@gmail.com"></a><i class="fa fa-envelope"></i>
+        </div>
+    </section>
+
+
+
+    
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-nav').style.width
+            ='250px';
+    
+            document.querySelector('.logo').style.visibility
+            ='visible';
+
+            document.querySelector('.fa-align-justify').style.visibility
+            ='hidden';
+        }
+    
+        function closeSlideMenu(){
+            document.getElementById('side-nav').style.width
+            ='0';
+
+            document.querySelector('.fa-align-justify').style.visibility
+            ='visible';
+        }     
+    </script>
+
+
+</body>
+</html>
